@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS Passport</title>
+</head>
+
+<style>
+    .content {
+  max-width: 800px;
+  margin: auto;
+}
+.DeckContent {
+    max-width: auto;
+    margin: auto;
+}
+    .my-custom-scrollbar {
+    position: center;
+    width: 800px;
+    height: 200px;
+    overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
+  .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Player: {{text}}</h1>
+          <p class="lead"><i>This application assesses PS4 games only; PS3, Vita, and other consoles are not assessed</i></p>
+        </div>
+      </div>
+<div class="content">
+      <div class="card bg-dark text-white">
+        <img src="https://pbs.twimg.com/media/EdfLXw_XoActVEg?format=jpg&name=medium" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Number of countries visited</h5>
+          <p class="card-text"><h1>{{numbers}}</h1></p>
+          
+        </div>
+      </div>
+    </div>
+<br>
+<div class="content">
+<div class="center">
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+    <table class="table table-bordered table-striped mb-0">
+        <thead>
+            <tr style="color: green;"> 
+                <td>Locations</td>
+                <td>Visits</td>
+            </tr>
+        </thead>
+        {%for i in range(0,len)%}
+        <tr>
+        <td>{{list_of_countries[i][0]}}</td>
+        <td>{{list_of_countries[i][1]}}</td>
+        {%endfor%}
+        </tr>
+    </table>
+</div>
+</div>
+    <!--Next slide-->
+    <br>
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+    <table class="table table-bordered table-striped mb-0">
+        <thead>
+            <tr style="color: green;"> 
+                <td>Locations</td>
+                <td>Games</td>
+            </tr>
+        </thead>
+        {%for i in range(0,pailen)%}
+        <tr>
+        <td>{{game_list[i][0]}}</td>
+        <td>{{game_list[i][1]}}</td>
+        {%endfor%}
+        </tr>
+    </table>
+</div>
+<!--<p>{{games}}</p>-->
+</div>
+<br>
+<hr class="featurette-divider">
+<footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2020 Deve Tambat <a href="https://twitter.com/iotambat">My Twitter</a> &middot; <a href="https://ko-fi.com/iotambat">Donate</a></p>
+  </footer>
+
+
+
+    <script language="JavaScript">
+        var myCustomScrollbar = document.querySelector('.my-custom-scrollbar');
+        Ps.initialize(myCustomScrollbar);
+        var scrollbarY = myCustomScrollbar.querySelector('.ps.ps--active-y>.ps__scrollbar-y-rail');
+        myCustomScrollbar.onscroll = function() 
+        {
+        scrollbarY.style.cssText = `top: ${this.scrollTop}px!important; height: 400px; right: ${-this.scrollLeft}px`;  
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
