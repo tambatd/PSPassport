@@ -26,7 +26,7 @@ Game_to_country = {
  "NieR: Automata": "Japan",
  "BioShock Remastered": "Rapture",
  "BioShock Infinite: The Complete Edition": "Columbia",
- "Deus Ex: Mankind Divided": "Prague",
+ "Deus Ex: Mankind Divided": "Czech Republic",
  "L.A. Noire": "USA",
  "Wolfenstein: The New Order": ("USA","Moon"),
  "Wolfenstein II: The New Colossus": ("USA","Venus"),
