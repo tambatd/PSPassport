@@ -5,6 +5,15 @@ import urllib3
 #All this information can be taken from playstation's in house API
 
 Game_to_country = {
+ "Ghost of Tsushima":"Japan",
+ "The Last of Us Part II": "USA",
+ "DOOM Eternal": ("Mars","Hell","Earth"),
+ "Death Stranding": "USA",
+ "Sekiro: Shadows Die Twice": "Japan",
+ "Resident Evil 7: Biohazard": "USA",
+ "Days Gone": "USA",
+ "Resident Evil 3": "USA",
+ "Resident Evil 2": "USA",
  "Grand Theft Auto V": ("USA"),
  "Uncharted 4: A Thief's End": ("Panama", "USA", "Italy", "Scotland","Madagascar"), 
  "Marvel's Spider-Man": ("USA"),
@@ -54,6 +63,7 @@ Game_to_country = {
  "Yakuza 4":("Japan"),
  "Yakuza 3":("Japan"),
  "Nioh":("Japan"),
+ "Nioh 2": ("Japan"),
  "Destiny 2": ("The Sun", "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn","Nessus"),
  "Final Fantasy XV": ("Eos"),
  "Titanfall 2": ("The Frontier"),
