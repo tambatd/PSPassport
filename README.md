@@ -1,5 +1,5 @@
 # PS Passport 🕹️
-PS Passport is a webserver that can show the real life locations of places visited while playing PS4/PS5 games
+PS Passport is a web server that can show the real life locations of places visited while playing PS4/PS5 games
 ## Installation 💽
 The Following libraries are being used:
 ```bash
