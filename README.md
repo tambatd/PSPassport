@@ -1,6 +1,6 @@
 # PS Passport 🕹️
 PS Passport is a webserver that can show the real life locations of places visited while playing PS4/PS5 games
-## Installation
+## Installation 💽
 The Following libraries are being used:
 ```bash
 beautifulsoup4==4.9.1
@@ -19,10 +19,19 @@ soupsieve==2.0.1
 urllib3==1.25.9
 Werkzeug==1.0.1
 ```
-You can find them in requirements.txt
+You can find them in requirements.txt.
 
 If trying to run locally, use python's standard package manager (pip) to install the above modules.
 
+## Usage ⚙️
+when in the local directory of the app.py python file:
+```python
+python app.py
+```
+## Contributing 🛠️
+Feel free to request to pull to add new games and their locations to the dictionary :)
 
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
 
