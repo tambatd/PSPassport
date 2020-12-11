@@ -28,6 +28,7 @@ when in the local directory of the app.py python file:
 ```python
 python app.py
 ```
+The server should run on http://127.0.0.1:5000/
 ## Contributing 🛠️
 Feel free to request to pull to add new games and their locations to the dictionary :)
 
