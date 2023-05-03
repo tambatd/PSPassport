@@ -82,20 +82,10 @@ def Data_Generator(nametext):
     link = "https://psnprofiles.com/"+UserName
     html_content = requests.get(link).text
     soup = BeautifulSoup(html_content,"lxml")
-    #print(soup.prettify())
     name1 = ""
-    #print(soup.title)
-    #print(soup.title.txt)
-    for link in soup.find_all("a"):
-        #if name1 != "Platinum, not 100%":
-        #    name1 = link.text
-        #    print(link.text)
-        #else:  
-        #    Game_List.append(link.text)
-        
+    for link in soup.find_all("a"):  
         if name1 != "Platinum, not 100%":
             name1 = link.text
-            #print(link.text)
         else:
             name2 = link.text
             if name2 == "See Benefits":
